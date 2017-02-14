@@ -81,13 +81,16 @@
     <None Include="Team\Team.sql" />
     <Build Include="User\UserDocument.sql" />
     <Build Include="User\UserLevel.sql" />
-    <Build Include="User\UserRequest.sql" />
     <Build Include="User\UserRole.sql" />
     <Build Include="User\User.sql" />
     <Build Include="User\UserTeam.sql" />
+    <Build Include="RequestType\Request.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="HRM.Database.publish.xml" />
     <PostDeploy Include="TestData\TestData.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="TestData.sql" />
   </ItemGroup>
 </Project>
