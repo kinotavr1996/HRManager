@@ -4,7 +4,6 @@
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseName>HRM</TargetDatabaseName>
     <DeployScriptFileName>HRM.Database.sql</DeployScriptFileName>
-    <TargetConnectionString>Data Source=HP\SQLEXPRESS;Persist Security Info=False;User ID=sa;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</TargetConnectionString>
     <ProfileVersionNumber>1</ProfileVersionNumber>
   </PropertyGroup>
 </Project>
