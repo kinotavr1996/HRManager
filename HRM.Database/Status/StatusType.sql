@@ -1,6 +1,6 @@
-﻿CREATE TABLE [hrm].[SatusType](
+﻿CREATE TABLE [hrm].[StatusType](
 	[Id] int NOT NULL,
 	[Name] nvarchar(64)
-	CONSTRAINT [PK_SatusTypeId] PRIMARY KEY ([Id])
+	CONSTRAINT [PK_StatusType] PRIMARY KEY ([Id])
 	 
 )
