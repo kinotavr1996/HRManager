@@ -68,13 +68,13 @@
     <Folder Include="Status" />
     <Folder Include="OfficialHollydays" />
     <Folder Include="RequestType" />
-    <Folder Include="RoleType" />
+    <Folder Include="Role" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Shema\Shema.sql" />
     <Build Include="OfficialHollydays\OffHolidays.sql" />
     <Build Include="RequestType\RequestType.sql" />
-    <Build Include="RoleType\RoleType.sql" />
+    <Build Include="Role\Role.sql" />
     <Build Include="Settings\Settings.sql" />
     <Build Include="Status\Status.sql" />
     <Build Include="Status\StatusType.sql" />
@@ -82,7 +82,7 @@
     <Build Include="User\UserDocument.sql" />
     <Build Include="User\UserLevel.sql" />
     <Build Include="User\UserRequest.sql" />
-    <Build Include="User\UserRoleType.sql" />
+    <Build Include="User\UserRole.sql" />
     <Build Include="User\User.sql" />
     <Build Include="User\UserTeam.sql" />
   </ItemGroup>
