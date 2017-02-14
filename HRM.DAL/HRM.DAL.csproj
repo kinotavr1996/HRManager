@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Base.cs" />
+    <Compile Include="Models\OfficialHollidays.cs" />
+    <Compile Include="Models\Settings.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserDocument.cs" />
     <Compile Include="Models\UserLevel.cs" />
