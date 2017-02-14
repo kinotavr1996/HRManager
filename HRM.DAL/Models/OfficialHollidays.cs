@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace HRM.DAL.Models
 {
-    class OfficialHollidays
+    class OfficialHollidays : Base
     {
+        public string Date { get; set; }
+        public string Name { get; set; }
     }
 }
