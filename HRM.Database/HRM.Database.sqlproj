@@ -83,7 +83,7 @@
     <Build Include="User\UserDocument.sql" />
     <Build Include="User\UserLevel.sql" />
     <Build Include="User\UserRequest.sql" />
-    <Build Include="User\UserRoleType.sql" />
+    <Build Include="User\UserRole.sql" />
     <Build Include="User\User.sql" />
     <None Include="HRM.Database.publish.xml" />
     <Build Include="User\UserTeam.sql" />
