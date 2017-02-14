@@ -90,4 +90,7 @@
     <None Include="HRM.Database.publish.xml" />
     <PostDeploy Include="TestData\TestData.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="TestData.sql" />
+  </ItemGroup>
 </Project>

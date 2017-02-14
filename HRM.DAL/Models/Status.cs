@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace HRM.DAL.Models
 {
-    class Base
+    class Status : Base
     {
-<<<<<<< Updated upstream
-        public int Id { get; set; }
-
-=======
-      	public int Id { get; set; } 
->>>>>>> Stashed changes
+       public string Name { get; set; }
+       public int StatusTypeId { get; set; }
     }
 }
