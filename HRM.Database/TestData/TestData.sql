@@ -20,3 +20,10 @@ INSERT INTO [hrm].[OfficialHollidays] VALUES (7,'10-14-2017','Day of defenders o
 
 -- Settings data
 INSERT INTO [hrm].[Settings] VALUES (1,5,20)
+
+INSERT INTO [hrm].[StatusType](Name) VALUES ('User')
+INSERT INTO [hrm].[StatusType](Name) VALUES ('Request')
+
+INSERT INTO [hrm].[Status](Name,StatusTypeID) VALUES ('Vacation',1)
+INSERT INTO [hrm].[Status](Name,StatusTypeID) VALUES ('Sickness',2)
+INSERT INTO [hrm].[Status](Name,StatusTypeID) VALUES ('In processing',1)
