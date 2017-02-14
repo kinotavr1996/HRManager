@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{8038d755-9f00-41fd-ae3b-33aceb20ac45}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -72,7 +72,6 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Shema\Shema.sql" />
-    <None Include="HRM.Database.sqlproj.user" />
     <Build Include="OfficialHollydays\OffHolidays.sql" />
     <Build Include="RequestType\RequestType.sql" />
     <Build Include="RoleType\RoleType.sql" />
@@ -85,7 +84,10 @@
     <Build Include="User\UserRequest.sql" />
     <Build Include="User\UserRoleType.sql" />
     <Build Include="User\User.sql" />
-    <None Include="HRM.Database.publish.xml" />
     <Build Include="User\UserTeam.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HRM.Database.publish.xml" />
+    <PostDeploy Include="TestData\TestData.sql" />
   </ItemGroup>
 </Project>
