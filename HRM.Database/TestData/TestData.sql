@@ -1,0 +1,5 @@
+﻿INSERT INTO [hrm].[RequestType] VALUES ('SickReques')
+INSERT INTO [hrm].[RequestType] VALUES ('VacationRequst')
+INSERT INTO [hrm].[UserLevel] VALUES ('Junior')
+INSERT INTO [hrm].[UserLevel] VALUES('Middle')
+INSERT INTO [hrm].[UserLevel] VALUES('Semior')
