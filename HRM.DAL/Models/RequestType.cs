@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HRM.DAL
+namespace HRM.DAL.Models
 {
-    public class Class1
+    class RequestType : Base
     {
+
+        public string Name { get; set; }
+       
+
     }
 }
