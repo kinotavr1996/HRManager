@@ -1,6 +1,10 @@
 ﻿INSERT INTO [hrm].[RequestType] VALUES ('SickReques')
 INSERT INTO [hrm].[RequestType] VALUES ('VacationRequst')
 
+
+INSERT INTO [hrm].[UserLevel] VALUES ('Junior')
+INSERT INTO [hrm].[UserLevel] VALUES('Middle')
+INSERT INTO [hrm].[UserLevel] VALUES('Semior')
 -- OfficialHollidays data
 INSERT INTO [hrm].[OfficialHollidays] VALUES (1,'01-01-2017','New Year')
 INSERT INTO [hrm].[OfficialHollidays] VALUES (2,'01-07-2017','Christmas')
