@@ -72,7 +72,6 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Shema\Shema.sql" />
-    <None Include="HRM.Database.sqlproj.user" />
     <Build Include="OfficialHollydays\OffHolidays.sql" />
     <Build Include="RequestType\RequestType.sql" />
     <Build Include="Role\Role.sql" />
@@ -85,7 +84,10 @@
     <Build Include="User\UserRequest.sql" />
     <Build Include="User\UserRole.sql" />
     <Build Include="User\User.sql" />
-    <None Include="HRM.Database.publish.xml" />
     <Build Include="User\UserTeam.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HRM.Database.publish.xml" />
+    <PostDeploy Include="TestData\TestData.sql" />
   </ItemGroup>
 </Project>
