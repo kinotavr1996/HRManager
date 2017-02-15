@@ -49,14 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EF\OfficialHollidaysMap.cs" />
-    <Compile Include="EF\RoleMap.cs" />
     <Compile Include="Models\Base.cs" />
     <Compile Include="Models\OfficialHollidays.cs" />
-    <Compile Include="Models\Request.cs" />
+<Compile Include="EF\StatusMap.cs" />
+    <Compile Include="EF\StatusTypeMap.cs" /> <Compile Include="Models\Request.cs" />
     <Compile Include="Models\RequestType.cs" />
-    <Compile Include="Models\Role.cs" />
-    <Compile Include="Models\Settings.cs" />
+    <Compile Include="Models\Role.cs" />    <Compile Include="Models\Settings.cs" />
     <Compile Include="Models\Status.cs" />
     <Compile Include="Models\StatusType.cs" />
     <Compile Include="Models\User.cs" />
@@ -69,8 +67,10 @@
     <Compile Include="UnitOfWork\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DomainValue\" />
-    <Folder Include="Repository\" />
+	<Folder Include="DomainValue\" />
+    <Folder Include="Repository\" />  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

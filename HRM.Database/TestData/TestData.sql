@@ -1,8 +1,7 @@
-﻿-- RequestType
-INSERT INTO [hrm].[RequestType] VALUES ('SickReques')
+﻿INSERT INTO [hrm].[RequestType] VALUES ('SickReques')
 INSERT INTO [hrm].[RequestType] VALUES ('VacationRequst')
 
--- UserLevel
+
 INSERT INTO [hrm].[UserLevel] VALUES ('Junior')
 INSERT INTO [hrm].[UserLevel] VALUES('Middle')
 INSERT INTO [hrm].[UserLevel] VALUES('Semior')
@@ -23,13 +22,9 @@ INSERT INTO [hrm].[OfficialHollidays] VALUES (10,'10-14-2017','Day of defenders 
 -- Settings data
 INSERT INTO [hrm].[Settings] VALUES (1,5,20)
 
--- Request
--- Role
--- Status
--- StatusType
--- Team
--- User
--- UserDocument
--- UserRole
--- UserTeam
+INSERT INTO [hrm].[StatusType]([Id], [Name]) VALUES (1, 'User')
+INSERT INTO [hrm].[StatusType]([Id], Name) VALUES (2, 'Request')
 
+INSERT INTO [hrm].[Status]([Name], [StatusTypeId]) VALUES ('Vacation',		1)
+INSERT INTO [hrm].[Status]([Name], [StatusTypeId]) VALUES ('Sickness',		2)
+INSERT INTO [hrm].[Status]([Name], [StatusTypeId]) VALUES ('In processing',	1)
