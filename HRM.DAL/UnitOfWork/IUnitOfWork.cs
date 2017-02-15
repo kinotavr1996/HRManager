@@ -1,4 +1,5 @@
-﻿using HRM.DAL.EF;
+﻿using HRM.DAL.DbContext;
+using HRM.DAL.EF;
 using System;
 
 namespace SMPhotos.DAL

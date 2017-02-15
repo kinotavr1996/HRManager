@@ -16,8 +16,8 @@ namespace HRM.DAL.EF
             Property(t => t.Email).HasMaxLength(128).IsRequired();
             Property(t => t.UserStatusId).IsRequired();
             Property(t => t.UserLevelId).IsRequired();
-            HasRequired(e => e.UserLevel);
-            HasMany(e => e.UserDocument).WithRequired(e => e.User);
+            HasRequired(e => e.UserLevel);//one to one
+            HasMany(e => e.UserDocument).WithRequired(e => e.User);//many to one
 
         }
     }

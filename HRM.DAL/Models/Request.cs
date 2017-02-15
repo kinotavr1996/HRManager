@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HRM.DAL.Models
 {
-    class UserRequest : Base
+    class UserRequest : BaseModel
     {
 
         public int UserId { get; set; }
