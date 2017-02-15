@@ -54,6 +54,7 @@
     <Compile Include="DbContext\RequestMap.cs" />
     <Compile Include="DbContext\RequestTypeMap.cs" />
     <Compile Include="DbContext\RoleMap.cs" />
+    <Compile Include="DbContext\SettingsMap.cs" />
     <Compile Include="DbContext\StatusMap.cs" />
     <Compile Include="DbContext\StatusTypeMap.cs" />
     <Compile Include="DbContext\UserDocumentMap.cs" />
