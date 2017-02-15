@@ -8,7 +8,6 @@ namespace HRM.DAL.EF
 
         public UserMap()
         {
-            
             ToTable("User", "hrm").HasKey(t => t.Id);
             Property(t => t.FullName).HasMaxLength(128).IsRequired();
             Property(t => t.StartDate).IsRequired();
