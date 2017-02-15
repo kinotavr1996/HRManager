@@ -10,5 +10,6 @@ namespace HRM.DAL.Models
     {
        public string Name { get; set; }
        public int StatusTypeId { get; set; }
+        
     }
 }

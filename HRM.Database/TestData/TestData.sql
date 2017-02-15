@@ -22,9 +22,9 @@ INSERT INTO [hrm].[OfficialHollidays] VALUES (10,'10-14-2017','Day of defenders 
 -- Settings data
 INSERT INTO [hrm].[Settings] VALUES (1,5,20)
 
-INSERT INTO [hrm].[StatusType](Name) VALUES ('User')
-INSERT INTO [hrm].[StatusType](Name) VALUES ('Request')
+INSERT INTO [hrm].[StatusType]([Id], [Name]) VALUES (1, 'User')
+INSERT INTO [hrm].[StatusType]([Id], Name) VALUES (2, 'Request')
 
-INSERT INTO [hrm].[Status](Name,StatusTypeID) VALUES ('Vacation',1)
-INSERT INTO [hrm].[Status](Name,StatusTypeID) VALUES ('Sickness',2)
-INSERT INTO [hrm].[Status](Name,StatusTypeID) VALUES ('In processing',1)
+INSERT INTO [hrm].[Status]([Name], [StatusTypeId]) VALUES ('Vacation',		1)
+INSERT INTO [hrm].[Status]([Name], [StatusTypeId]) VALUES ('Sickness',		2)
+INSERT INTO [hrm].[Status]([Name], [StatusTypeId]) VALUES ('In processing',	1)
