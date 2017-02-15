@@ -72,7 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Shema\Shema.sql" />
-    <Build Include="OfficialHollydays\OffHolidays.sql" />
+    <Build Include="OfficialHollydays\OfficialHollidays.sql" />
     <Build Include="RequestType\RequestType.sql" />
     <Build Include="Role\Role.sql" />
     <Build Include="Settings\Settings.sql" />

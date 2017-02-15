@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [hrm].[User](
 	[Id] int NOT NULL IDENTITY(1,1),
-	[FullName] nvarchar(32) NOT NULL,
-	[Password] nvarchar(64) NOT NULL,
-	[Email] nvarchar(32) NOT NULL,	
+	[FullName] nvarchar(128) NOT NULL,
+	[Password] nvarchar(128) NOT NULL,
+	[Email] nvarchar(128) NOT NULL,	
 	[StartDate] Date NOT NULL,
 	[UserStatusId] int NOT NULL,
 	[UserLevelId] int NOT NULL	
