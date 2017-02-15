@@ -30,7 +30,7 @@ namespace HRM.DAL.DbContext
             
 
             modelBuilder.Entity<User>()
-                .HasMany<Role>(t => t.Role)
+                .HasMany<Role>(t => t.Roles1)
                 .WithMany(u => u.User)
                 .Map(ur =>
                 {
