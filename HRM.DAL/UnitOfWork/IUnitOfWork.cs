@@ -1,10 +1,11 @@
-﻿using System;
+﻿using HRM.DAL.EF;
+using System;
 
 namespace SMPhotos.DAL
 {
 	public interface IUnitOfWork : IDisposable
 	{
-		SMPContext Context { get; }
+		HRMContext Context { get; }
 		void SaveChanges();
 	}
 }

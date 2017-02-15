@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HRM.DAL.DomainValue
+﻿namespace HRM.DAL.DomainValue
 {
-    class DbConnection
+    public enum DbConnection
     {
+        HRMContext = 1,
+        HRMContextOlegHome = 2,
+        HRMContextOlegOffice = 4
     }
 }

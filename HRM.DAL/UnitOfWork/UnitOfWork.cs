@@ -1,16 +1,17 @@
-﻿using System;
+﻿using HRM.DAL.EF;
+using System;
 
 namespace SMPhotos.DAL
 {
 	public class UnitOfWork : IUnitOfWork
 	{
-		private readonly SMPContext _dbContext;
+		private readonly HRMContext _dbContext;
 
-		public UnitOfWork(SMPContext dbcontext)
+		public UnitOfWork(HRMContext dbcontext)
 		{
 			_dbContext = dbcontext;
 		}
-		public SMPContext Context
+		public HRMContext Context
 		{
 			get { return _dbContext; }
 		}

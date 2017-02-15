@@ -1,10 +1,10 @@
 ﻿
 namespace HRM.DAL.Models
 {
-    class UserDocument : Base
+    public class UserDocument : BaseModel
     {
         public string DocumentLink { get; set; }
-        public int UserId { get; set; }
+        public virtual User User { get; set; }
 
     }
 }

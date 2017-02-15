@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace HRM.DAL.Models
 {
-    class UserLevel:Base
+    public class UserLevel:BaseModel
     {
         public string Name { get; set; }
+       
     }
 }

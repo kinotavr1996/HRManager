@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace HRM.DAL.EF
 {
-    class HRMContext
+    public class UserDocumentMap : EntityTypeConfiguration<UserDocumentMap>
     {
+
     }
 }
