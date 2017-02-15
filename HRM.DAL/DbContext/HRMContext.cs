@@ -27,7 +27,17 @@ namespace HRM.DAL.DbContext
                             tu.ToTable("UserTeam");
 
                         });
-                
+            
+
+            modelBuilder.Entity<User>()
+                .HasMany<Role>(t => t.Role)
+                .WithMany(u => u.User)
+                .Map(ur =>
+                {
+                    ur.MapLeftKey("UserId");
+                    ur.MapRightKey("RoleTypeId");
+                    ur.ToTable("UserRole");
+                });
 
 
 

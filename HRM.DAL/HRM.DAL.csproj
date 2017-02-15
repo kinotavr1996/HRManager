@@ -57,9 +57,11 @@
     <Compile Include="DbContext\SettingsMap.cs" />
     <Compile Include="DbContext\StatusMap.cs" />
     <Compile Include="DbContext\StatusTypeMap.cs" />
+    <Compile Include="DbContext\TeamMap.cs" />
     <Compile Include="DbContext\UserDocumentMap.cs" />
     <Compile Include="DbContext\UserLevelMap.cs" />
     <Compile Include="DbContext\UserMap.cs" />
+    <Compile Include="DbContext\UserRoleMap.cs" />
     <Compile Include="DbContext\UserTeamMap.cs" />
     <Compile Include="DomainValue\DbConnection.cs" />
     <Compile Include="Models\BaseModel.cs" />
