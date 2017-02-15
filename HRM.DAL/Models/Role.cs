@@ -5,8 +5,32 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace HRM.DAL.EF
+namespace HRM.DAL.Models
 {
-    class RequestTypeMap
+  
+    class Role  : Base
     {
+
+        public string Name { get; set; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
