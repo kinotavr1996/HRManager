@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [hrm].[Settings](
 	[Id] int,
-	[SickDays] nvarchar(32),
-	[VacationDays] nvarchar(32)
+	[SickDays] int NOT NULL,
+	[VacationDays] int NOT NULL
 	CONSTRAINT [PK_Settings] PRIMARY KEY ([Id])
 )
