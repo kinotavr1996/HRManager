@@ -18,13 +18,14 @@ namespace HRM.DAL.DbContext
             modelBuilder.Configurations.Add(new UserMap());
 
             modelBuilder.Entity<User>()
-               .HasMany<Team>(t => t.Team)
+               .HasMany<Team>(t => t.Teams)
                .WithMany(u => u.User)
                .Map(tu =>
                         {
                             tu.MapLeftKey("UserId");
                             tu.MapRightKey("TeamId");
                             tu.ToTable("UserTeam");
+
 
                         });
                 

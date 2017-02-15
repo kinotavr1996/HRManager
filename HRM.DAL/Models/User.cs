@@ -19,7 +19,8 @@ namespace HRM.DAL.Models
         
         public virtual UserLevel UserLevel { get; set; }
         public virtual ICollection<UserDocument> UserDocument { get; set; }
-        public virtual ICollection<Team> Team { get; set; }
+        public virtual ICollection<Team> Teams { get; set; }
+        public virtual ICollection<UserRequest> Requests { get; set; }
 
 
     }

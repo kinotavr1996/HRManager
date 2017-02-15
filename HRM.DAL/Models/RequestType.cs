@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace HRM.DAL.Models
 {
-    class RequestType : BaseModel
+    public class RequestType : BaseModel
     {
 
         public string Name { get; set; }
-       
+
+        public virtual ICollection<UserRequest> UserRequests { get; set; }
+
 
     }
 }
