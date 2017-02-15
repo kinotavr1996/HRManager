@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HRM.DAL.Models
+namespace HRM.DAL.EF
 {
-    public class UserLevel:BaseModel
+    class UserLevelMap
     {
-        public string Name { get; set; }
-       
     }
 }

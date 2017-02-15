@@ -2,8 +2,9 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
-    <TargetDatabaseName>HRM</TargetDatabaseName>
+    <TargetDatabaseName>HRM.Database</TargetDatabaseName>
     <DeployScriptFileName>HRM.Database.sql</DeployScriptFileName>
     <ProfileVersionNumber>1</ProfileVersionNumber>
+    <TargetConnectionString>Data Source=DESKTOP-CCQMST0\SQLEXPRESS;Persist Security Info=True;User ID=sa;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</TargetConnectionString>
   </PropertyGroup>
 </Project>

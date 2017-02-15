@@ -1,15 +1,25 @@
-﻿namespace HRM.DAL.Models
+﻿
+
+using System.Collections.Generic;
+
+namespace HRM.DAL.Models
 {
-    class User : Base
+    public class User : BaseModel
     {
+        public User()
+        {
+            UserDocument = new HashSet<UserDocument>();
+        }
         public string FullName { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
-        public System.DateTime? StartDate{ get; set; }
-
+        public System.DateTime? StartDate{ get; set; }         
         public int UserStatusId { get; set; }
-        public int UserLevelId { get; set; }
-
+        public virtual int UserLevelId { get; set; }
+        
+        public virtual UserLevel UserLevel { get; set; }
+        public virtual ICollection<UserDocument> UserDocument { get; set; }
+        public virtual ICollection<Team> Team { get; set; }
 
 
     }

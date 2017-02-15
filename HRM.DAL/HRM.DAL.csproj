@@ -30,7 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,9 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Base.cs" />
+    <Compile Include="DbContext\HRMContext.cs" />
+    <Compile Include="DbContext\RequestMap.cs" />
+    <Compile Include="DbContext\RequestTypeMap.cs" />
+    <Compile Include="DbContext\UserDocumentMap.cs" />
+    <Compile Include="DbContext\UserLevelMap.cs" />
+    <Compile Include="DbContext\UserMap.cs" />
+    <Compile Include="DbContext\UserTeamMap.cs" />
+    <Compile Include="DomainValue\DbConnection.cs" />
+    <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\OfficialHollidays.cs" />
     <Compile Include="Models\Settings.cs" />
+    <Compile Include="Models\Team.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserDocument.cs" />
     <Compile Include="Models\UserLevel.cs" />
@@ -51,7 +69,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="EF\" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Status.cs" />
