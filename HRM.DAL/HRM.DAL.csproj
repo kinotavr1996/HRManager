@@ -49,21 +49,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EF\HRMContext.cs" />
+ <Compile Include="DbContext\HRMContext.cs" />
+    <Compile Include="DbContext\RequestMap.cs" />
+    <Compile Include="DbContext\RequestTypeMap.cs" />
+    <Compile Include="DbContext\UserDocumentMap.cs" />
+    <Compile Include="DbContext\UserLevelMap.cs" />
+    <Compile Include="DbContext\UserMap.cs" />
+    <Compile Include="DbContext\UserTeamMap.cs" />
+    <Compile Include="DomainValue\DbConnection.cs" />
+    <Compile Include="Models\BaseModel.cs" />    <Compile Include="Models\OfficialHollidays.cs" />
+    <Compile Include="Models\Request.cs" />
+    <Compile Include="Models\RequestType.cs" />
+    <Compile Include="Models\Settings.cs" />
+ <Compile Include="Models\Status.cs" />
+    <Compile Include="Models\StatusType.cs" />    <Compile Include="Models\Team.cs" /><Compile Include="EF\HRMContext.cs" />
     <Compile Include="EF\OfficialHollidaysMap.cs" />
     <Compile Include="EF\RequestMap.cs" />
     <Compile Include="EF\RequestTypeMap.cs" />
     <Compile Include="EF\SettingsMap.cs" />
     <Compile Include="EF\UserDocumentMap.cs" />
     <Compile Include="EF\UserMap.cs" />
-    <Compile Include="Models\Base.cs" />
-    <Compile Include="Models\OfficialHollidays.cs" />
-    <Compile Include="Models\Request.cs" />
-    <Compile Include="Models\RequestType.cs" />
-    <Compile Include="Models\Settings.cs" />
-    <Compile Include="Models\Status.cs" />
-    <Compile Include="Models\StatusType.cs" />
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Base.cs" />    <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserDocument.cs" />
     <Compile Include="Models\UserLevel.cs" />
     <Compile Include="Models\UserRole.cs" />
