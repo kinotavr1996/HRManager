@@ -8,11 +8,12 @@ using System.Threading.Tasks;
 namespace HRM.DAL.EF
 {
 
-    class RoleMap: EntityTypeConfiguration<Role>
+    class RoleMap : EntityTypeConfiguration<Role>
     {
         public RoleMap()
         {
             ToTable("Role", "hrm").HasKey(t => t.Id);
             Property(t => t.Name).HasMaxLength(128);
         }
+    }
 }
