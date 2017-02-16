@@ -10,16 +10,18 @@
             <h2 class="form-signin-heading">Please sign in or <a href="/">Join us</a></h2>
             <div class="form-group">
                 <input name="email" class="form-control input-lg" placeholder="Email" />
-             </div>
+            </div>
             <div class="form-group">
-                <input name="password" class="form-control input-lg" placeholder="Email" />               
+                <input name="password" class="form-control input-lg" placeholder="Email" />
             </div>
             <div class="checkbox">
-                <label>          
+                <label>
                     <input type="checkbox" class="checkbox-primary" aria-label="Checkbox for following text input">Remember Me
                 </label>
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <div class="form-group">
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            </div>
             @Html.ValidationMessage("credentials")
 
         </form>
