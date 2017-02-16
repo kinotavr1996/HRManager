@@ -78,7 +78,7 @@
     <Build Include="Settings\Settings.sql" />
     <Build Include="Status\Status.sql" />
     <Build Include="Status\StatusType.sql" />
-    <None Include="Team\Team.sql" />
+    <Build Include="Team\Team.sql" />
     <Build Include="User\UserDocument.sql" />
     <Build Include="User\UserLevel.sql" />
     <Build Include="User\UserRole.sql" />
@@ -88,7 +88,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="HRM.Database.publish.xml" />
-    <PostDeploy Include="TestData\TestData.sql" />
+    <None Include="TestData\TestData.sql" />
     <None Include="HRM.Database_last.publish.xml" />
+    <None Include="HRM_1.Database.publish.xml" />
   </ItemGroup>
 </Project>

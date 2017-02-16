@@ -18,7 +18,7 @@ namespace HRM.DAL.DbContext
             modelBuilder.Configurations.Add(new UserMap());
 
             modelBuilder.Entity<User>()
-               .HasMany<Team>(t => t.Team)
+               .HasMany<Team>(t => t.Teams)
                .WithMany(u => u.User)
                .Map(tu =>
                         {
@@ -26,8 +26,19 @@ namespace HRM.DAL.DbContext
                             tu.MapRightKey("TeamId");
                             tu.ToTable("UserTeam");
 
+
                         });
-                
+            
+
+            modelBuilder.Entity<User>()
+                .HasMany<Role>(t => t.Roles)
+                .WithMany(u => u.User)
+                .Map(ur =>
+                {
+                    ur.MapLeftKey("UserId");
+                    ur.MapRightKey("RoleTypeId");
+                    ur.ToTable("UserRole");
+                });
 
 
 
