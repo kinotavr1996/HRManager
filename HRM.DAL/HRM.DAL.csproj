@@ -83,18 +83,26 @@
     <Compile Include="Models\UserRole.cs" />
     <Compile Include="Models\UserTeam.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\BaseRepository\IRepository.cs" />
+    <Compile Include="Repository\BaseRepository\Repository.cs" />
+    <Compile Include="Repository\TeamRepository\ITeamRepository.cs" />
+    <Compile Include="Repository\TeamRepository\TeamRepository.cs" />
+    <Compile Include="Repository\UserRepository\IUserRepository.cs" />
+    <Compile Include="Repository\UserRepository\UserRepository.cs" />
     <Compile Include="UnitOfWork\IUnitOfWork.cs" />
     <Compile Include="UnitOfWork\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Repository\" />
+    <Folder Include="Domain\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -2,7 +2,7 @@
 using HRM.DAL.EF;
 using System;
 
-namespace SMPhotos.DAL
+namespace HRM.DAL
 {
 	public interface IUnitOfWork : IDisposable
 	{
