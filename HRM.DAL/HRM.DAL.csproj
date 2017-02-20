@@ -85,6 +85,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\BaseRepository\IRepository.cs" />
     <Compile Include="Repository\BaseRepository\Repository.cs" />
+    <Compile Include="Repository\StatusRepository\IStatusRepository.cs" />
+    <Compile Include="Repository\StatusRepository\StatusRepository.cs" />
+    <Compile Include="Repository\StatusTypeRepository\IStatusTypeRepository.cs" />
+    <Compile Include="Repository\StatusTypeRepository\StatusTypeRepository.cs" />
     <Compile Include="Repository\TeamRepository\ITeamRepository.cs" />
     <Compile Include="Repository\TeamRepository\TeamRepository.cs" />
     <Compile Include="Repository\UserRepository\IUserRepository.cs" />

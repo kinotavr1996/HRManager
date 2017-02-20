@@ -25,14 +25,14 @@ namespace HRM.DAL.DbContext
 
         public virtual DbSet<User> OfficialHollidays { get; set; }
         public virtual DbSet<User> Role { get; set; }
-        public virtual DbSet<User> StatusType { get; set; }
+        public virtual DbSet<StatusType> StatusType { get; set; }
         public virtual DbSet<User> UserLevel { get; set; }
         public virtual DbSet<User> UserTeam { get; set; }
         public virtual DbSet<User> UserRole { get; set; }
         public virtual DbSet<User> UserDocument { get; set; }
         public virtual DbSet<User> UserRequest { get; set; }
         public virtual DbSet<User> Settings { get; set; }
-        public virtual DbSet<User> Status { get; set; }
+        public virtual DbSet<Status> Status { get; set; }
         public virtual DbSet<User> Request { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

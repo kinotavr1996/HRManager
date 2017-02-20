@@ -15,7 +15,7 @@ namespace HRM.DAL.Repository.TeamRepository
             return _unitOfWork.Context.Teams
                 .Where(e => e.Id == Id).FirstOrDefault();
         }
-        public override void Remove(Team team)
+        public override void RemoveStatus(Team team)
         {
             _unitOfWork.Context.Users.RemoveRange(team.User);
             _unitOfWork.Context.Teams.Remove(team);
