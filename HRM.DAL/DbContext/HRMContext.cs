@@ -16,6 +16,9 @@ namespace HRM.DAL.DbContext
         public HRMContext() : base(string.Format("name={0}", DbConnection.HRMContext)) { }
         public virtual DbSet<Team> Teams { get; set; }
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<UserRequest> UserRequest { get; set; }
+        public virtual DbSet<RequestType> RequestType { get; set; }
+        public virtual DbSet<UserDocument> UserDocument { get; set; }
 
 
 
@@ -25,6 +28,10 @@ namespace HRM.DAL.DbContext
             modelBuilder.Configurations.Add(new TeamMap());
 
             modelBuilder.Configurations.Add(new UserMap());
+            modelBuilder.Configurations.Add(new UserMap());
+            modelBuilder.Configurations.Add(new UserRequestMap());
+            modelBuilder.Configurations.Add(new UserDocumentMap());
+            modelBuilder.Configurations.Add(new RequestTypeMap());
 
             modelBuilder.Entity<User>()
                .HasMany<Team>(t => t.Teams)
