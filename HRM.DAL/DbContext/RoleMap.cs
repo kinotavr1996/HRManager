@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace HRM.DAL.EF
 {
 
-    class RoleMap : EntityTypeConfiguration<Role>
+    public class RoleMap : EntityTypeConfiguration<Role>
     {
         public RoleMap()
         {

@@ -7,7 +7,12 @@ namespace HRM.Web.Controllers
     {
         // GET: Home
         private readonly IUserRepository _userRepository;
-       
+        /*public HomeController(
+             IUserRepository userRepository)
+        {
+           this._userRepository = userRepository;
+            
+        }*/
         public ActionResult Index()
         {
             return View();
