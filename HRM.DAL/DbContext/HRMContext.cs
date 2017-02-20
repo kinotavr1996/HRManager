@@ -16,13 +16,6 @@ namespace HRM.DAL.DbContext
         public HRMContext() : base(string.Format("name={0}", DbConnection.HRMContext)) { }
         public virtual DbSet<Team> Teams { get; set; }
         public virtual DbSet<User> Users { get; set; }
-
-
-
-
-
-
-
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<StatusType> StatusType { get; set; }

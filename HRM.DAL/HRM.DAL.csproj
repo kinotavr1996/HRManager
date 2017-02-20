@@ -104,6 +104,10 @@
     <Compile Include="Repository\RequestsRepository\UserDocument.cs" />
     <Compile Include="Repository\RequestsRepository\RequestTypeRepository.cs" />
     <Compile Include="Repository\RequestsRepository\UserRequestRepository.cs" />
+    <Compile Include="Repository\StatusRepository\IStatusRepository.cs" />
+    <Compile Include="Repository\StatusRepository\StatusRepository.cs" />
+    <Compile Include="Repository\StatusTypeRepository\IStatusTypeRepository.cs" />
+    <Compile Include="Repository\StatusTypeRepository\StatusTypeRepository.cs" />
     <Compile Include="Repository\TeamRepository\ITeamRepository.cs" />
     <Compile Include="Repository\TeamRepository\TeamRepository.cs" />
     <Compile Include="Repository\UserRepository\IUserRepository.cs" />

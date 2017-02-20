@@ -45,7 +45,7 @@ namespace HRM.DAL
             _unitOfWork.Context.Set<TEntity>().AddRange(entities);
         }
 
-        public virtual void Remove(TEntity entity)
+        public virtual void RemoveStatus(TEntity entity)
         {
             _unitOfWork.Context.Set<TEntity>().Remove(entity);
         }
