@@ -3,7 +3,7 @@ using HRM.Web.ViewModel;
 using System;
 using System.Net.Mail;
 
-namespace SMPhotos.Web.Controllers
+namespace HRM.Web.Controllers
 {
 	public partial class HomeController
 	{

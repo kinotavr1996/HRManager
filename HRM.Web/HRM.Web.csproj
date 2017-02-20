@@ -260,6 +260,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\_Navigation.cshtml" />
     <Content Include="Views\Home\ChangeProfile.cshtml" />
+    <Content Include="Views\Home\NotActivated.cshtml" />
+    <Content Include="Views\Home\HR.cshtml" />
+    <Content Include="Views\Home\TeamLead.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

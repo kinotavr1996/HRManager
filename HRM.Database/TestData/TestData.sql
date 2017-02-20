@@ -28,7 +28,7 @@ INSERT INTO [hrm].[OfficialHollidays] VALUES (7,'2017-06-04','Trinity')
 INSERT INTO [hrm].[OfficialHollidays] VALUES (8,'2017-06-28','Constitution Day of Ukraine')
 INSERT INTO [hrm].[OfficialHollidays] VALUES (9,'2017-08-24','Independence Day of Ukraine')
 INSERT INTO [hrm].[OfficialHollidays] VALUES (10,'2017-10-14','Day of defenders of Ukraine')
-*/
+
 
 -- Settings data
 INSERT INTO [hrm].[Settings] VALUES (1,5,20)

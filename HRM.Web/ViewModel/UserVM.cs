@@ -17,6 +17,7 @@ namespace HRM.Web.ViewModel
         public DateTime? StartDate { get; set; }
         public string  UserLevel { get; set; }
         public string UserRole { get; set; }
+        public string Message { get; set; }
 
     }
 }
