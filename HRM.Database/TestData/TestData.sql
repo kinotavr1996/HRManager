@@ -39,4 +39,3 @@ INSERT INTO [hrm].[StatusType]([Id], Name) VALUES (2, 'Request')
 INSERT INTO [hrm].[Status]([Name], [StatusTypeId]) VALUES ('Vacation',		1)
 INSERT INTO [hrm].[Status]([Name], [StatusTypeId]) VALUES ('Sickness',		2)
 INSERT INTO [hrm].[Status]([Name], [StatusTypeId]) VALUES ('In processing',	1)
-*/
