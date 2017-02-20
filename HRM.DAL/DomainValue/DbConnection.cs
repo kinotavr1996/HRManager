@@ -2,8 +2,9 @@
 {
     public enum DbConnection
     {
-        HRMContext = 1,
-        HRMContextOlegHome = 2,
-        HRMContextOlegOffice = 4
+       
+        HRMContext = 1
+
+       
     }
 }

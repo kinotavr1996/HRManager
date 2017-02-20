@@ -8,7 +8,8 @@ namespace HRM.DAL.EF
         public UserDocumentMap()
         {
             ToTable("UserDocumentMap", "hrm").HasKey(t => t.Id);
-            Property(t => t.DocumentLink).HasMaxLength(128).IsRequired(); 
+            Property(t => t.DocumentLink).HasMaxLength(128).IsRequired();
+            Property(t => t.User.Id).IsRequired();
         }
     }
 }
