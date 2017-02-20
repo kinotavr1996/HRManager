@@ -4,7 +4,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
 
-namespace HRM.Web.App_Start
+namespace HRM.Web
 {
     public class Startup
     {
