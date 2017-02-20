@@ -11,7 +11,7 @@ namespace HRM.DAL.Models
 
         public string Name { get; set; }
 
-        public virtual ICollection<UserRequest> UserRequests { get; set; }
+        
 
 
     }
