@@ -13,6 +13,12 @@ namespace HRM.DAL
         public UserRepository(IUnitOfWork context) : base(context)
 		{
         }
+        public User GetByCredentials(string email, string password)
+        {
+            return _unitOfWork.Context.Users
+                .Where(e => e.Email == email && e.Password == password)
+                .FirstOrDefault();
+        }
         public User GetByEmail(string email)
         {
             return _unitOfWork.Context.Users
