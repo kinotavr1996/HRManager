@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HRM.DAL.Models
 {
-    class Status : BaseModel
+    public class Status : BaseModel
     {
        public string Name { get; set; }
        public int StatusTypeId { get; set; }
