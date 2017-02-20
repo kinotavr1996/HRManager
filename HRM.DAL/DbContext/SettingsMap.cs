@@ -8,7 +8,7 @@ using HRM.DAL.Models;
 
 namespace HRM.DAL.EF
 {
-    class SettingsMap : EntityTypeConfiguration<Settings>
+    public class SettingsMap : EntityTypeConfiguration<Settings>
     {
         public SettingsMap()
         {

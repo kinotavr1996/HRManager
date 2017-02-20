@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HRM.DAL.DbContext
 {
-    class UserRoleMap : EntityTypeConfiguration<UserRole>
+    public class UserRoleMap : EntityTypeConfiguration<UserRole>
     {
         public UserRoleMap()
         {
