@@ -73,15 +73,7 @@ namespace HRM.DAL.DbContext
                         });
             
 
-            modelBuilder.Entity<User>()
-                .HasMany<Role>(t => t.Roles)
-                .WithMany(u => u.User)
-                .Map(ur =>
-                {
-                    ur.MapLeftKey("UserId");
-                    ur.MapRightKey("RoleTypeId");
-                    ur.ToTable("UserRole");
-                });
+         
 
 
 
