@@ -97,6 +97,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\BaseRepository\IRepository.cs" />
     <Compile Include="Repository\BaseRepository\Repository.cs" />
+    <Compile Include="Repository\OfficialHollidaysRepository\IOfficialHollidaysRepository.cs" />
+    <Compile Include="Repository\OfficialHollidaysRepository\OfficialHollidaysRepository.cs" />
+    <Compile Include="Repository\SettingsRepository\ISettingsRepository.cs" />
+    <Compile Include="Repository\SettingsRepository\SettingsRepository.cs" />
     <Compile Include="Repository\RequestsRepository\UserDocument.cs" />
     <Compile Include="Repository\RequestsRepository\RequestTypeRepository.cs" />
     <Compile Include="Repository\RequestsRepository\UserRequestRepository.cs" />
