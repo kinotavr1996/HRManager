@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace HRM.DAL.Models
 {
-    public class UserTeam:BaseModel
+    class Settings :BaseModel
     {
-        public virtual User User { get; set; }
-        public virtual Team Team { get; set; }
-        
+        public string SickDays { get; set; }
+        public string VacationDays { get; set; }
     }
 }

@@ -9,6 +9,7 @@ namespace HRM.DAL
 {
     public interface IUserRepository: IRepository<User>
     {
+        User GetByCredentials(string email, string password);
         User GetByEmail(string email);
         IEnumerable<User> GetTeamLead();
         IEnumerable<User> GetHR();

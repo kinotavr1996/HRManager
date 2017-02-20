@@ -10,5 +10,6 @@ namespace HRM.Web {
         public string Password { get; set; }
         public string Email { get; set; }
         public System.DateTime? StartDate { get; set; }
+        public int Role { get; set; }
     }
 }
