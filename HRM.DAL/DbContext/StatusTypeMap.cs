@@ -3,7 +3,7 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace HRM.DAL.EF
 {
-    class StatusTypeMap : EntityTypeConfiguration<StatusType>
+    public class StatusTypeMap : EntityTypeConfiguration<StatusType>
     {
         public StatusTypeMap()
  		{
