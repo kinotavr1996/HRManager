@@ -3,7 +3,8 @@
     public enum DbConnection
     {
        
-        HRMContextAndrew = 1
+        HRMContext = 1
+
        
     }
 }

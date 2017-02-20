@@ -89,6 +89,9 @@
     <Compile Include="Repository\OfficialHollidaysRepository\OfficialHollidaysRepository.cs" />
     <Compile Include="Repository\SettingsRepository\ISettingsRepository.cs" />
     <Compile Include="Repository\SettingsRepository\SettingsRepository.cs" />
+    <Compile Include="Repository\RequestsRepository\UserDocument.cs" />
+    <Compile Include="Repository\RequestsRepository\RequestTypeRepository.cs" />
+    <Compile Include="Repository\RequestsRepository\UserRequestRepository.cs" />
     <Compile Include="Repository\TeamRepository\ITeamRepository.cs" />
     <Compile Include="Repository\TeamRepository\TeamRepository.cs" />
     <Compile Include="Repository\UserRepository\IUserRepository.cs" />
