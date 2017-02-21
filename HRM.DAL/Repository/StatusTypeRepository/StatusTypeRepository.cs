@@ -16,7 +16,7 @@ namespace HRM.DAL.Repository.StatusTypeRepository
         public StatusType GetStatusTypeByName(string name)
         {
             return _unitOfWork.Context.StatusType
-                .Where(e => e.Name == name).FirstOrDefault<StatusType>;
+                .Where(e => e.Name == name).FirstOrDefault();
         }
 
     }

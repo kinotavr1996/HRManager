@@ -15,7 +15,8 @@ namespace HRM.Web.Bootstraper
             {
                 config.AddProfile(new MappingProfile());
             });
-            Mapper.AssertConfigurationIsValid();
+
+            //Mapper.AssertConfigurationIsValid();
 
         }
     }

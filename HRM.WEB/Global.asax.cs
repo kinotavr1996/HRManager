@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HRM.Web.Bootstraper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,7 @@ namespace HRM.Web
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            Bootstrapper.Initialize();
         }
     }
 }
