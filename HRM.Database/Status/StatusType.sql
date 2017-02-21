@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [hrm].[StatusType](
-	[Id] int NOT NULL,
-	[Name] nvarchar(128)
+	[Id] INT NOT NULL,
+	[Name] NVARCHAR(128)
 	CONSTRAINT [PK_StatusType] PRIMARY KEY ([Id])
 	 
 )

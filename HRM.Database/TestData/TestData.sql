@@ -1,10 +1,10 @@
-﻿INSERT INTO [hrm].[RequestType]([Name]) VALUES ('SickReques');
-INSERT INTO [hrm].[RequestType]([Name]) VALUES ('VacationRequst');
+﻿INSERT INTO [hrm].[RequestType]([Id],[Name]) VALUES (1,'SickReques');
+INSERT INTO [hrm].[RequestType]([Id],[Name]) VALUES (2,'VacationRequst');
 
 
-INSERT INTO [hrm].[UserLevel]([Name]) VALUES ('Junior');
-INSERT INTO [hrm].[UserLevel]([Name]) VALUES('Middle');
-INSERT INTO [hrm].[UserLevel]([Name]) VALUES('Senior');
+INSERT INTO [hrm].[UserLevel]([Id],[Name]) VALUES (1,'Junior');
+INSERT INTO [hrm].[UserLevel]([Id],[Name]) VALUES(2,'Middle');
+INSERT INTO [hrm].[UserLevel]([Id],[Name]) VALUES(3,'Senior');
 
 
 INSERT INTO [hrm].[OfficialHollidays]([Id],[Date],[Name]) VALUES (1,'01-01-2017','New Year');
@@ -25,15 +25,15 @@ INSERT INTO [hrm].[Settings]([Id],[SickDays],[VacationDays]) VALUES (1,5,20);
 INSERT INTO [hrm].[StatusType]([Id], [Name]) VALUES (1, 'User');
 INSERT INTO [hrm].[StatusType]([Id], Name) VALUES (2, 'Request');
 
-INSERT INTO [hrm].[Status]([Name], [StatusTypeId]) VALUES ('Vacation',		1);
-INSERT INTO [hrm].[Status]([Name], [StatusTypeId]) VALUES ('Sickness',		2);
-INSERT INTO [hrm].[Status]([Name], [StatusTypeId]) VALUES ('In processing',	1);
+INSERT INTO [hrm].[Status]([Id],[Name], [StatusTypeId]) VALUES (1,'Vacation',		1);
+INSERT INTO [hrm].[Status]([Id],[Name], [StatusTypeId]) VALUES (2,'Sickness',		2);
+INSERT INTO [hrm].[Status]([Id],[Name], [StatusTypeId]) VALUES (3,'In processing',	1);
 
 
 
-INSERT INTO [hrm].[Role]([Name]) VALUES ('User');
-INSERT INTO [hrm].[Role]([Name]) VALUES ('TeamLead');
-INSERT INTO [hrm].[Role]([Name]) VALUES ('HR');
+INSERT INTO [hrm].[Role]([Id],[Name]) VALUES (1,'User');
+INSERT INTO [hrm].[Role]([Id],[Name]) VALUES (2,'TeamLead');
+INSERT INTO [hrm].[Role]([Id],[Name]) VALUES (3,'HR');
 
 INSERT INTO [hrm].[Team]([TeamName]) VALUES ('Students');
 INSERT INTO [hrm].[Team]([TeamName]) VALUES ('HRM');
