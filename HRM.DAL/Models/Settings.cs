@@ -8,7 +8,7 @@ namespace HRM.DAL.Models
 {
     public class Settings :BaseModel
     {
-        public string SickDays { get; set; }
-        public string VacationDays { get; set; }
+        public int SickDays { get; set; }
+        public int VacationDays { get; set; }
     }
 }

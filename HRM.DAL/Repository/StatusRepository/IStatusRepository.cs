@@ -9,7 +9,7 @@ namespace HRM.DAL.Repository.StatusRepository
 {
     interface IStatusRepository : IRepository<Status>
     {
-        Status GetStatusById(int? Id);
+        Status GetStatusById(int Id);
     }
 }
 

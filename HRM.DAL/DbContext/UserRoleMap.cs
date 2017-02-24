@@ -12,7 +12,10 @@ namespace HRM.DAL.DbContext
     {
         public UserRoleMap()
         {
-            ToTable("UserRole", "hrm").HasKey(t => t.Id);
+            this.ToTable("UserRole", "hrm");
+            this.HasKey(t => t.RoleId);
+            this.HasKey(t => t.UserId);
         }
+     
     }
 }

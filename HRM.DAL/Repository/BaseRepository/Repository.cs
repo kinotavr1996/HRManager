@@ -2,6 +2,8 @@
 using HRM.DAL;
 using System.Collections.Generic;
 using System.Linq;
+using System;
+using System.Data.Entity;
 
 namespace HRM.DAL
 {
@@ -9,50 +11,45 @@ namespace HRM.DAL
     {
         protected readonly IUnitOfWork _unitOfWork;
         private HRMContext dbContext;
-
-        public Repository(IUnitOfWork unitOfWork)
-        {
-            _unitOfWork = unitOfWork;
-        }
-
-        public Repository(HRMContext dbContext)
-        {
-            this.dbContext = dbContext;
-        }
-
         public IUnitOfWork UnitOfWork
         {
             get { return _unitOfWork; }
         }
-
+        public Repository(HRMContext db)
+        {
+            dbContext = db;
+        }
+        public Repository(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
         public TEntity Get(int id)
         {
-            return _unitOfWork.Context.Set<TEntity>().Find(id);
+            return dbContext.Set<TEntity>().Find(id);
         }
-
         public IEnumerable<TEntity> GetAll()
         {
-            return _unitOfWork.Context.Set<TEntity>().ToList();
+            return dbContext.Set<TEntity>().ToList();
         }
-
         public void Add(TEntity entity)
         {
-            _unitOfWork.Context.Set<TEntity>().Add(entity);
+            dbContext.Set<TEntity>().Add(entity);
         }
-
         public void AddRange(IEnumerable<TEntity> entities)
         {
-            _unitOfWork.Context.Set<TEntity>().AddRange(entities);
+            dbContext.Set<TEntity>().AddRange(entities);
         }
-
-        public virtual void RemoveStatus(TEntity entity)
+        public virtual void Delete(TEntity entity)
         {
-            _unitOfWork.Context.Set<TEntity>().Remove(entity);
+            dbContext.Set<TEntity>().Remove(entity);
         }
-
-        public void RemoveRange(IEnumerable<TEntity> entities)
+        public void DeleteRange(IEnumerable<TEntity> entities)
         {
-            _unitOfWork.Context.Set<TEntity>().RemoveRange(entities);
+            dbContext.Set<TEntity>().RemoveRange(entities);
+        }
+        public void Edit(TEntity entity)
+        {
+            dbContext.Entry(entity).State = EntityState.Modified;
         }
     }
 }

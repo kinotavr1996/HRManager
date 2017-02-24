@@ -1,4 +1,5 @@
-﻿using HRM.DAL.Models;
+﻿using HRM.DAL.DbContext;
+using HRM.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,14 +10,16 @@ namespace HRM.DAL
 {
    public class OfficialHollidaysRepository : Repository<OfficialHollidays>, IOfficialHollidaysRepository
     {
-        public OfficialHollidaysRepository(IUnitOfWork context) : base(context)
+        private HRMContext dbContext;
+        public OfficialHollidaysRepository(HRMContext context) : base(context)
         {
+            dbContext = context;
         }
 
 
-        public OfficialHollidays GetOffHolldayByID(int? Id)
+        public OfficialHollidays GetOffHolldayByID(int Id)
         {
-            return _unitOfWork.Context.OfficialHollidays.Where(e => e.Id == Id).FirstOrDefault<OfficialHollidays>();
+            return dbContext.OfficialHollidayses.Where(e => e.Id == Id).FirstOrDefault<OfficialHollidays>();
   
         }
     }

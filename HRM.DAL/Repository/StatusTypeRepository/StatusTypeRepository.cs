@@ -4,19 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HRM.DAL.Models;
+using HRM.DAL.DbContext;
 
 namespace HRM.DAL.Repository.StatusTypeRepository
 {
     public class StatusTypeRepository : Repository<StatusType>, IStatusTypeRepository
     {
-        public StatusTypeRepository(IUnitOfWork context) : base(context)
+        public HRMContext db;
+        public StatusTypeRepository(HRMContext context) : base(context)
 		{
+            db = context;
         }    
 
         public StatusType GetStatusTypeByName(string name)
         {
-            return _unitOfWork.Context.StatusType
-                .Where(e => e.Name == name).FirstOrDefault();
+            return db.StatusTypes
+                .Where(e => e.Name == name).FirstOrDefault<StatusType>();
         }
 
     }

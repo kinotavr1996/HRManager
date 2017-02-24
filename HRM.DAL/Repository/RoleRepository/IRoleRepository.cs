@@ -9,6 +9,6 @@ namespace HRM.DAL.Repository.RoleRepository
 {
     interface IRoleRepository:IRepository<Role>
     {
-        Role GetRoleById(int? Id);
+        Role GetRoleById(int Id);
     }
 }

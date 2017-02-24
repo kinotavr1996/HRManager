@@ -1,4 +1,5 @@
-﻿using HRM.DAL.Models;
+﻿using HRM.DAL.DbContext;
+using HRM.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,10 @@ namespace HRM.DAL
 {
     public class SettingsRepository : Repository<Settings>, ISettingsRepository
     {
-        public SettingsRepository(IUnitOfWork context) : base(context)
+        public HRMContext db;
+        public SettingsRepository(HRMContext context) : base(context)
         {
+            db = context;
         }
 
     }

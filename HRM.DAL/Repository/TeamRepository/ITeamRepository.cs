@@ -10,6 +10,6 @@ namespace HRM.DAL.Repository.TeamRepository
    public  interface ITeamRepository:IRepository<Team>
     {
         Team GetTeamById(int? Id);
-        void RemoveMembers(Team team, User user);
+        void DeleteMembers(Team team, User user);
     }
 }

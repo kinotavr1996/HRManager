@@ -63,9 +63,13 @@
             public const string User = "User";
             public const string TeamLead = "TeamLead";
             public const string HR = "HR";
-        }
+            public const int IsInUserRole = 1;
+            public const int IsInTeamLeadRole = 2;
+            public const int IsInHRRole = 3;
 
-        public static class MVCManager
+    }
+
+    public static class MVCManager
         {
             public static class SessionData
             {

@@ -4,18 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HRM.DAL.Models;
+using HRM.DAL.DbContext;
 
 namespace HRM.DAL.Repository.StatusRepository
 {
-    class StatusRepository : Repository<Status>, IStatusRepository
+    public  class StatusRepository : Repository<Status>, IStatusRepository
     {
-        public StatusRepository(IUnitOfWork context) : base(context)
+       public  HRMContext db;
+        public StatusRepository(HRMContext context) : base(context)
 		{
+            db = context;
         }
 
-        public Status GetStatusById(int? Id)
+        public Status GetStatusById(int Id)
         {
-            return _unitOfWork.Context.Status
+            return db.Statuses
                 .Where(e => e.Id == Id).FirstOrDefault<Status>();
         }
    

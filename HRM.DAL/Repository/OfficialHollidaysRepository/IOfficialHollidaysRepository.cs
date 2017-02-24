@@ -9,7 +9,7 @@ namespace HRM.DAL
 {
     public interface IOfficialHollidaysRepository : IRepository<OfficialHollidays>
     {
-        OfficialHollidays GetOffHolldayByID(int? Id);
+        OfficialHollidays GetOffHolldayByID(int Id);
 
     }
 }

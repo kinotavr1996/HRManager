@@ -1,23 +1,21 @@
-﻿using HRM.DAL.Models;
+﻿using HRM.DAL.DbContext;
+using HRM.DAL.Models;
 using System.Linq;
 
 namespace HRM.DAL.Repository.RoleRepository
 {
-    class RoleRepository:Repository<Role>, IRoleRepository
+    public class RoleRepository:Repository<Role>, IRoleRepository
     {
-        public RoleRepository(IUnitOfWork context) : base(context)
+        public HRMContext db;
+        public RoleRepository(HRMContext context) : base(context)
 		{
+            db = context;
     }
-    public Role GetRoleById(int? Id)
+    public Role GetRoleById(int Id)
     {
-        return _unitOfWork.Context.Role
+        return db.Roles
             .Where(e => e.Id == Id).FirstOrDefault();
     }
-    public override void Remove(Role role)
-    {
-        _unitOfWork.Context.Users.RemoveRange(role.Users);
-        _unitOfWork.Context.Teams.Remove(role);
-
-    }        
+         
     }
 }

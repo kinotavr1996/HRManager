@@ -2,9 +2,9 @@
 
 namespace HRM.DAL.Models
 {
-    public class UserRole:BaseModel
+    public class UserRole
     {
-        public virtual User User { get; set; }
-        public virtual Role Role { get; set; }
+        public int UserId { set; get; }
+        public int RoleId { set; get; }
     }
 }

@@ -101,6 +101,10 @@
       <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
       <Private>True</Private>
@@ -222,7 +226,10 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="Bootstraper\Bootstrapper.cs" />
+    <Compile Include="Controllers\HomeController.Admin.cs" />
+    <Compile Include="Controllers\HomeController.Auth.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HomeController.Validation.cs" />
     <Compile Include="Controllers\MainController.cs" />
     <Compile Include="DependencyInjection\DependencyResolverConfig.cs" />
     <Compile Include="DependencyInjection\IWebTypeResolver.cs" />
@@ -236,6 +243,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserContext\UserContext.cs" />
     <Compile Include="ViewModel\UserCredentialsVM.cs" />
+    <Compile Include="ViewModel\UserVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -252,6 +260,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\_Navigation.cshtml" />
+    <Content Include="Views\Home\HR.cshtml" />
+    <Content Include="Views\Home\ChangeProfile.cshtml" />
+    <Content Include="Views\Home\NotActivated.cshtml" />
+    <Content Include="Views\Home\TeamLead.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

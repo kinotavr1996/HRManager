@@ -14,6 +14,8 @@ namespace HRM.DAL.EF
         {
             ToTable("Role", "hrm").HasKey(t => t.Id);
             Property(t => t.Name).HasMaxLength(128);
+
+            
         }
     }
 }

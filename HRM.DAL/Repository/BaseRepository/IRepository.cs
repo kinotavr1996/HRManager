@@ -10,8 +10,9 @@ namespace HRM.DAL
         IEnumerable<TEntity> GetAll();
         void Add(TEntity entity);
         void AddRange(IEnumerable<TEntity> entities);
-        void RemoveStatus(TEntity entity);
-        void RemoveRange(IEnumerable<TEntity> entities);
+        void Delete(TEntity entity);
+        void DeleteRange(IEnumerable<TEntity> entities);
+        void Edit(TEntity entity);
 
     }
 }

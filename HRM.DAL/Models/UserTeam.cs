@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace HRM.DAL.Models
 {
-    public class UserTeam:BaseModel
+    public class UserTeam
     {
-        public virtual User User { get; set; }
-        public virtual Team Team { get; set; }
+        public int UserId { set; get; }
+        public int TeamId { set; get; }
         
     }
 }

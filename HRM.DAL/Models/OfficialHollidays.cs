@@ -8,7 +8,7 @@ namespace HRM.DAL.Models
 {
     public class OfficialHollidays : BaseModel
     {
-        public string Date { get; set; }
+        public DateTime Date { get; set; }
         public string Name { get; set; }
     }
 }

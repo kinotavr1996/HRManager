@@ -5,33 +5,44 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HRM.DAL.DbContext;
+using System.Data.Entity;
 
 namespace HRM.DAL
 {
-    public class UserRepository: Repository<User>,IUserRepository
+    public class UserRepository : Repository<User>,IUserRepository
     {
-        public UserRepository(IUnitOfWork context) : base(context)
+        public HRMContext db;
+        public UserRepository(HRMContext context) : base(context)
 		{
+            db = context;
         }
+        /*public UserRepository(IUnitOfWork context) : base(context)
+        {
+        }*/
         public User GetByCredentials(string email, string password)
         {
-            return _unitOfWork.Context.Users
+            return db.Users
                 .Where(e => e.Email == email && e.Password == password)
                 .FirstOrDefault();
         }
         public User GetByEmail(string email)
         {
-            return _unitOfWork.Context.Users
+            return db.Users
                 .Where(e => e.Email == email)
                 .FirstOrDefault<User>();
         }
-        public IEnumerable<User> GetTeamLead()
-        {
-            return _unitOfWork.Context.Users.Where(c => c.Roles.Any(t => t.Id == 2));
-        }
+
+      
+
         public IEnumerable<User> GetHR()
         {
-            return _unitOfWork.Context.Users.Where(c => c.Roles.Any(t => t.Id == 3));
+            return db.Users.Where(c => c.Roles.Any(t => t.Id == 3));
+        }
+
+        public IEnumerable<User> GetTeamLead()
+        {
+            return db.Users.Where(c => c.Roles.Any(t => t.Id == 2));
         }
     }
 }

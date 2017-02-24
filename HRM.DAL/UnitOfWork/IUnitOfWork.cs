@@ -1,12 +1,15 @@
 ﻿using HRM.DAL.DbContext;
-using HRM.DAL.EF;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace HRM.DAL
 {
-	public interface IUnitOfWork : IDisposable
-	{
-		HRMContext Context { get; }
-		void SaveChanges();
-	}
+    public interface IUnitOfWork : IDisposable
+    {
+        
+        void SaveChanges();
+    }
 }

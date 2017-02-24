@@ -8,7 +8,7 @@ namespace HRM.DAL.EF
         public StatusTypeMap()
  		{
             ToTable("StatusType", "hrm").HasKey(t => t.Id); 
- 			Property(t => t.Name).HasMaxLength(64).IsRequired();
+ 			Property(t => t.Name).HasMaxLength(128).IsRequired();
         }
 
     }

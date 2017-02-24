@@ -13,8 +13,8 @@ namespace HRM.DAL.DbContext
         public TeamMap()
         {
             ToTable("Team", "hrm").HasKey(t => t.Id);
-            Property(t => t.TeamName).HasMaxLength(128).IsRequired();
-
+            Property(t => t.Name).HasMaxLength(128).IsRequired();
+            
         }
 
     }

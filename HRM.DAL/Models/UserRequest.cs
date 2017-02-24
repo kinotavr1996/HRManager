@@ -9,7 +9,9 @@ namespace HRM.DAL.Models
     public class UserRequest : BaseModel
     {
 
-   
+        public int UserId { set; get; }
+        public int RequestTypeId { set; get; }
+        public int StatusId { set; get; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         

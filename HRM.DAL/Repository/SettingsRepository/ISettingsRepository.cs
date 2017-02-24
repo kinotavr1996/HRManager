@@ -9,6 +9,5 @@ namespace HRM.DAL
 {
    public interface  ISettingsRepository : IRepository<Settings>
     {
-
     }
 }

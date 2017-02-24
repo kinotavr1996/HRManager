@@ -10,10 +10,10 @@ namespace HRM.DAL.Models
     {
         public StatusType()
         {
-            Status = new HashSet<Status>();
+            Statuses = new HashSet<Status>();
         }
         public string Name { get; set; }
-        public virtual ICollection<Status> Status { get; set; }
+        public virtual ICollection<Status> Statuses { get; set; }
 
     }
 }

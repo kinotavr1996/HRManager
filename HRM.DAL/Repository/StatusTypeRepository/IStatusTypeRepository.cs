@@ -9,9 +9,6 @@ namespace HRM.DAL.Repository.StatusTypeRepository
 {
     interface IStatusTypeRepository : IRepository<StatusType>
     {
-      
         StatusType GetStatusTypeByName(string name);
-        
-
     }
 }

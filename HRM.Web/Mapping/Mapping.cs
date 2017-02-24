@@ -11,8 +11,9 @@ namespace HRM.Web
     {
         [Obsolete]
         protected override void Configure()
-        {            
-            CreateMap<User, UserContext>(); 
+        {
+            CreateMap<User, UserContext>();
+                
         }
     }
 }
