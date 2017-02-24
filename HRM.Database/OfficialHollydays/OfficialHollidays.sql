@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [hrm].[OfficialHollidays](
-	[Id] int  NOT NULL,
-	[Date] DateTime NOT NULL,
-	[Name] nvarchar(128) 
+	[Id] INT  NOT NULL,
+	[Date] DATETIME NOT NULL,
+	[Name] NVARCHAR(128) 
 	CONSTRAINT [PK_OfficialHollidaysId] PRIMARY KEY ([Id])
 )
